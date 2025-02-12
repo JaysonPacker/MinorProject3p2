@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <!-- Load a 3D primitive at specific GPS location -->
-<head>
-<title>AR.js A-Frame Location-based</title>
-<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/three.js/build/ar-threex-location-only.js'></script>
-<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js'></script>
-</head>
-<body>
-<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
-    <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
-    <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: 43.083774; longitude: -77.675465" scale="5 5 5"></a-entity>
-</a-scene>
-</body>
+  <head>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+   
+    <title>Simple AR Scene</title>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs vr-mode-ui="enabled: false">
+      <!-- Marker -->
+      <a-marker preset="hiro">
+        <a-entity  scale="4 4 4" position="0 -2 0" animation="property: rotation; to: 0 0 360; loop: true; dur: 5000">
+        <a-entity gps-entity-place="latitude: 43.061337; longitude: -77.693721" position="0 0 0"
+        scale="0.003 0.003 0.003" rotation="0 90 0" gltf-model="./assets/circuit/scene.gltf" ></a-entity>
+
+        <a-entity gps-entity-place="latitude: 43.061337; longitude: -77.693721" position="-0.2 0 0.1"
+        scale="0.004 0.004 0.004" rotation="0 0 0" gltf-model="./assets/gears/scene.gltf"></a-entity>
+    
+        <a-entity gps-entity-place="latitude: 43.061337; longitude: -77.693721" position="0.1 0 0.3"
+        scale="0.2  0.2 0.2" rotation="-90 0 0" gltf-model="./assets/math_symbols/scene.gltf"></a-entity>
+  
+        <a-entity gps-entity-place="latitude: 43.061337; longitude: -77.693721" position="-1 2 0.9"
+        scale="0.1  0.1 0.1" rotation="-90 0 0" gltf-model="./assets/monitor/scene.gltf"></a-entity>
+</a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
 </html>

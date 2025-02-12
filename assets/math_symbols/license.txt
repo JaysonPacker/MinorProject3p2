@@ -1,0 +1,11 @@
+Model Information:
+* title:	math symbols
+* source:	https://sketchfab.com/3d-models/math-symbols-c3343847fd4949029c30d61e39e3eb2a
+* author:	wpswps (https://sketchfab.com/wpswps)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "math symbols" (https://sketchfab.com/3d-models/math-symbols-c3343847fd4949029c30d61e39e3eb2a) by wpswps (https://sketchfab.com/wpswps) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	9141 Spec2 Circuit Pattern Sample2
+* source:	https://sketchfab.com/3d-models/9141-spec2-circuit-pattern-sample2-2b50158fc02645bd9d97d164a7883989
+* author:	cscartdept (https://sketchfab.com/cscartdept)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "9141 Spec2 Circuit Pattern Sample2" (https://sketchfab.com/3d-models/9141-spec2-circuit-pattern-sample2-2b50158fc02645bd9d97d164a7883989) by cscartdept (https://sketchfab.com/cscartdept) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

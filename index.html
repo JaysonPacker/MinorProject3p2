@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-   
-    <title>Simple AR Scene</title>
-  </head>
-  <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs vr-mode-ui="enabled: false">
-      <!-- Marker -->
-      <a-marker preset="hiro">
-        <a-entity  scale="4 4 4" position="0 -2 0" animation="property: rotation; to: 0 0 360; loop: true; dur: 5000">
+
+<head>
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+  <title>Simple AR Scene</title>
+</head>
+
+<body style="margin: 0; overflow: hidden;">
+  <a-scene embedded arjs vr-mode-ui="enabled: false">
+    <!-- Marker -->
+    <a-marker type="pattern" url="./smaLogo.patt">
+      <a-entity scale="4 4 4" position="0 -2 0" animation="property: rotation; to: 0 0 360; loop: true; dur: 5000">
         <a-entity gps-entity-place="latitude: 43.061337; longitude: -77.693721" position="0 0 0"
-        scale="0.003 0.003 0.003" rotation="0 90 0" gltf-model="./assets/circuit/scene.gltf" ></a-entity>
+          scale="0.003 0.003 0.003" rotation="0 90 0" gltf-model="./assets/circuit/scene.gltf"></a-entity>
 
         <a-entity gps-entity-place="latitude: 43.061337; longitude: -77.693721" position="-0.2 0 0.1"
-        scale="0.004 0.004 0.004" rotation="0 0 0" gltf-model="./assets/gears/scene.gltf"></a-entity>
-    
+          scale="0.004 0.004 0.004" rotation="0 0 0" gltf-model="./assets/gears/scene.gltf"></a-entity>
+
         <a-entity gps-entity-place="latitude: 43.061337; longitude: -77.693721" position="0.1 0 0.3"
-        scale="0.2  0.2 0.2" rotation="-90 0 0" gltf-model="./assets/math_symbols/scene.gltf"></a-entity>
-  
-        <a-entity gps-entity-place="latitude: 43.061337; longitude: -77.693721" position="-1 2 0.9"
-        scale="0.1  0.1 0.1" rotation="-90 0 0" gltf-model="./assets/monitor/scene.gltf"></a-entity>
-</a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
-    </a-scene>
-  </body>
+          scale="0.2  0.2 0.2" rotation="-90 0 0" gltf-model="./assets/math_symbols/scene.gltf"></a-entity>
+
+        <a-entity gps-entity-place="latitude: 43.061337; longitude: -77.693721" position="-1 2 0.9" scale="0.1  0.1 0.1"
+          rotation="-90 0 0" gltf-model="./assets/monitor/scene.gltf"></a-entity>
+      </a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
 </html>
